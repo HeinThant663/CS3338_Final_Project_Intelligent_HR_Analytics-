@@ -1,1 +1,9 @@
 
+version: '3'
+services:
+  frontend:
+    image: react-app
+  backend:
+    image: node-server
+  database:
+    image: mongodb
