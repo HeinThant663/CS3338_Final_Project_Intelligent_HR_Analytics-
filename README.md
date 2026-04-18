@@ -1,4 +1,4 @@
-**# CS3338_Final_Project
+CS3338_Final_Project
 ---
 
 ## Team Members
@@ -35,12 +35,6 @@ This project focuses on **system design, requirements, and architecture**, not f
 * Notification System
 * Document Storage System
 * Analytics Dashboard
-
----
-
-## System Workflow
-
-![Workflow](diagrams/workflow.png)
 
 ---
 
