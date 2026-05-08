@@ -1,0 +1,181 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable}
+
+\title{\textbf{Intelligent HR Analysis System}\
+\large Software Design Document}
+\author{Suijian Li \ Freddy Montano \ Anthony Perez \ Gary Wu \ Hein Thant}
+\date{April 2026}
+
+\begin{document}
+
+%---------------- TITLE PAGE ----------------%
+\begin{titlepage}
+\centering
+\vspace*{2cm}
+
+{\LARGE \textbf{Intelligent HR Analysis System} \par}
+\vspace{1cm}
+
+{\Large Software Design Document \par}
+\vspace{2cm}
+
+{\large
+Suijian Li \
+Freddy Montano \
+Anthony Perez \
+Gary Wu \
+Hein Thant
+\par}
+
+\vfill
+
+{\large April 2026 \par}
+
+\end{titlepage}
+
+%---------------- TABLE OF CONTENTS ----------------%
+\newpage
+\tableofcontents
+\newpage
+
+%---------------- VERSION HISTORY ----------------%
+\section*{Version History}
+\addcontentsline{toc}{section}{Version History}
+
+\begin{longtable}{|l|l|l|l|}
+\hline
+\textbf{User} & \textbf{Date} & \textbf{Reason for Changes} & \textbf{Version} \
+\hline
+Hein T, Suijian L & [5/8/2026] & Snapshot 1 & 1.0 \
+\hline
+Freddy M & [5/9/2026] & Snapshot 2 & 2.0 \
+\hline
+Anthony P & [5/10/2026] & Snapshot 3 & 3.0 \
+\hline
+Gary W & [5/11/2026] & Snapshot 4 & 4.0 \
+\hline
+\end{longtable}
+
+\newpage
+
+%---------------- 1 INTRODUCTION ----------------%
+\section{Introduction}
+
+\subsection{Purpose}
+The purpose of this document is to provide a detailed description of the Intelligent HR Analysis System. This document outlines the system architecture, user interface, and overall system design.
+
+\subsection{Scope}
+This document covers the design of the Intelligent HR Analysis System. It serves as a reference for understanding how the system is structured and how components interact.
+
+\subsection{Intended Audience}
+\begin{itemize}
+\item Development team
+\item Project managers
+\item Stakeholders
+\end{itemize}
+
+\subsection{Overview}
+The Intelligent HR Analysis System is a web-based platform designed to automate HR workflows, track employee performance, and provide analytics dashboards for decision-making.
+
+\subsection{References}
+\begin{itemize}
+\item Project documentation
+\item Course materials
+\end{itemize}
+
+\subsection{Definitions, Acronyms, and Abbreviations}
+See Glossary section.
+
+%---------------- 2 SYSTEM ARCHITECTURE ----------------%
+\section{System Architecture}
+
+\subsection{Workflow}
+The workflow of the system consists of the following steps:
+\begin{itemize}
+\item HR inputs employee data into the system
+\item The system processes employee performance reviews
+\item Supervisors review and update employee records
+\item Data is stored in the system database
+\item The system generates analytics and reports
+\end{itemize}
+
+\subsection{Site Breakdown}
+The system consists of the following components:
+\begin{itemize}
+\item Web Application – Interface for HR and supervisors
+\item Backend System – Handles logic and workflows
+\item Database – Stores employee data
+\item Analytics Module – Displays reports and insights
+\item Notification System – Sends alerts and reminders
+\end{itemize}
+
+\subsection{Architecture Overview}
+The system follows a layered architecture:
+\begin{itemize}
+\item \textbf{View (Frontend):} User interface for interaction
+\item \textbf{Controller (Backend):} Processes requests and logic
+\item \textbf{Model (Database):} Stores and manages data
+\end{itemize}
+
+This structure ensures modularity and scalability.
+
+\subsection{Data Flow – Employee Review}
+\begin{enumerate}
+\item HR enters employee data into the system
+\item The system stores data in the database
+\item Supervisors access and update performance reviews
+\item The system processes updates and stores results
+\item Analytics module retrieves data and displays dashboards
+\end{enumerate}
+
+%---------------- 3 USER INTERFACE ----------------%
+\section{User Interface}
+
+\subsection{How to Use}
+
+\subsubsection{Web Application}
+Users access the system through a web browser.
+
+Features include:
+\begin{itemize}
+\item Dashboard for HR analytics
+\item Employee performance tracking
+\item Reports and data visualization
+\end{itemize}
+
+\subsection{Database Explanation}
+The database stores:
+\begin{itemize}
+\item Employee information
+\item Performance reviews
+\item Workflow status
+\end{itemize}
+
+Frontend retrieves data via REST API requests. Backend stores data using database schemas and integrates with UI components.
+
+The database system may use a relational database such as MySQL or PostgreSQL.
+
+%---------------- LEGAL ----------------%
+\section{Legal and Ethical Considerations}
+Utilizing existing hosting sites would cover most legal considerations. Ethical considerations primarily depend on the system users.
+
+%---------------- GLOSSARY ----------------%
+\section*{Glossary}
+\addcontentsline{toc}{section}{Glossary}
+
+HR -- Human Resources \
+UI -- User Interface \
+DB -- Database
+
+%---------------- REFERENCES ----------------%
+\section*{References}
+\addcontentsline{toc}{section}{References}
+
+\begin{itemize}
+\item \texttt{https://ascent.cysun.org/project/project/view/251}
+\item Course materials and project guidelines
+\end{itemize}
+
+\end{document}
