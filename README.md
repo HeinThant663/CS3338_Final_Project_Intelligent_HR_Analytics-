@@ -1,6 +1,6 @@
 CS3338_Final_Project
 ---
-Jira Project URL:
+Jira Project URL: https://calstatela-team-zzbzp5i9.atlassian.net/jira/software/projects/FPIHA/summary 
 
 ## Team Members
 
